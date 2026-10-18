@@ -24,22 +24,22 @@ src/
 
     
    
-   Getting Started
+   # Getting Started
 Prerequisites
 Java Development Kit (JDK) 11 or higher installed on your machine.
 
 Compilation & Execution
 Open your terminal in the root directory and run the following commands:
 
-# Compile all Java files
+ Compile all Java files
 javac -d bin src/**/*.java
 
-# Run the client application
+ Run the client application
 java -cp bin client.Client
 
 
 
-Design Overview
+# Design Overview
 The Problem: Converting media files manually requires a client to coordinate multiple low-level classes—instantiating codec factories, reading raw bitrate buffers, handling compression types, and mixing audio tracks. This creates high coupling and boilerplate code.
 
 The Facade Solution: The VideoConversionFacade wraps this intricate subsystem behind a single, intuitive method:
@@ -53,7 +53,7 @@ What Remains Accessible: Advanced clients can still bypass the Facade and use Co
 
 
 
-Clean Code Principles Applied
+# Clean Code Principles Applied
 Single Responsibility Principle (SRP): The Facade strictly coordinates execution flow; it delegates actual file processing to specialized subsystem classes.
 
 Meaningful Naming: Domain-driven, self-explanatory method and class names (convertVideo, CodecFactory) eliminate the need for redundant comments.
@@ -67,5 +67,5 @@ Robust Coordination: Predictable orchestration sequence prevents client-side ord
  
  
  
- Author
+ # Author
 Azamat Suinalin SE-2501
