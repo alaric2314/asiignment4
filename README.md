@@ -31,7 +31,6 @@ Java Development Kit (JDK) 11 or higher installed on your machine.
 Compilation & Execution
 Open your terminal in the root directory and run the following commands:
 
-Bash
 # Compile all Java files
 javac -d bin src/**/*.java
 
